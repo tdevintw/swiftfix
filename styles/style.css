@@ -481,6 +481,77 @@ footer ul {
     font-style: normal;
     font-weight: 700;
     font-size: 90px;
-    margin-top: 150px;
+    margin-top: 0;
   }
+form div{
+  margin-bottom: 20px;
+}
+.contact_us .part1{
+  
+}
+.contact_us{
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  gap:150px;
+  margin-bottom: 200px;
+}
+iframe{
+  margin-top: 170px;
+}
+form input{
+  width:200px;
+  padding:20px;
+}
+/* styles/custom.css */
+.main_services h1{
+    color: #ffffff;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    margin-top: 0;
+    text-align: center;
+}
+.main_services{
+  height: fit-content;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  background-image: url(/img/ellipse.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding-bottom: 80px;
+}
+.main_services a{
+  width:fit-content ;
+ background-color: #094B72;
+ color: white;
+ padding: 20px;
+ font-size: 20px;
+ border-radius: 10px;
 
+}
+.link2{
+  text-align: center;
+
+}
+footer{
+  margin-top: 0px;
+}
+div.services_choices{
+  row-gap: 20px;
+}
+.container{
+  height: 580px;
+  display: flex;
+  justify-content: center;
+}
+.container #choice1{
+ margin-top: 150px;
+}
+.container #choice2{
+  margin-top: 150px;
+}
+.container .services_choices{
+  height: 400px;
+}
