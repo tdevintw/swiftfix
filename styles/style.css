@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
 
 body {
   background-color: white;
@@ -52,13 +52,27 @@ span {
 .hero_tittle {
   margin-left: 300px;
 }
+
 .hero_image {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }
-.hero_image img {
-  height: 1000;
-  z-index: 2;
+.carte {
+  margin-top: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 10px;
+  background-color: #c1c8d31a;
+  width: 400px;
+  height: fit-content;
+
 }
+.hero_image img{
+  height: 700px;
+}
+
 .logo {
   display: flex;
   gap: 10px;
@@ -121,19 +135,20 @@ span {
   font-weight: 500;
   padding-left: 65px;
 }
-.carte {
-  margin-top: -5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border-radius: 10px;
-  background-color: #c1c8d31a;
-  position: absolute;
-  z-index: 1;
+ 
+.carte h2{
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.carte p{
+  width: 400px;
+  padding-left: 0;
+  margin-bottom: 10px;
 }
 .services {
   background-color: #f2f7ff;
   height: 1200px;
-  margin-top: 130px;
   display: flex;
   justify-content: center;
   gap: 70px;
@@ -460,7 +475,6 @@ footer ul {
   font-family: Poppins;
   font-size: 2rem;
   font-style: normal;
-  font-weight: 700;
   line-height: 3.6rem;
 }
 .link{
