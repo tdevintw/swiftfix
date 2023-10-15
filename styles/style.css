@@ -516,11 +516,13 @@ form input{
 .main_services{
   height: fit-content;
   margin-top: 200px;
-  margin-bottom: 0px;
+  margin-bottom: 150px;
   background-image: url(/img/ellipse.png);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: contain; 
+  background-position: center;
   padding-bottom: 80px;
+  padding-top: 80px;
 }
 .main_services a{
   width:fit-content ;
@@ -554,4 +556,18 @@ div.services_choices{
 }
 .container .services_choices{
   height: 400px;
+}
+#message{
+  height: 100px;
+  width: 300px;
+  overflow: auto;
+}
+#number{
+  width: 300px;
+}
+#email{
+  width: 300px;
+}
+#name{
+  width: 300px;
 }
