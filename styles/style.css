@@ -47,7 +47,6 @@ span {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  width: 1440;
 }
 .hero_tittle {
   margin-left: 300px;
@@ -512,6 +511,10 @@ form div{
 }
 iframe{
   margin-top: 170px;
+  width:400px;
+  height:300px;
+  border:0;
+
 }
 form input{
   width:200px;
@@ -584,4 +587,106 @@ div.services_choices{
 }
 #name{
   width: 300px;
+}
+@media only screen and (max-width:1600px){
+.hero h1{
+ font-size: 50px;
+}
+.hero_image img{
+  height: 500px;
+}
+.hero_image .carte{
+  width: 300px;
+}
+.carte h2{
+  font-size: 25px;
+
+}
+.carte p{
+  font-size: 20px;
+}
+.hero_tittle{
+  margin-left: 100px;
+}
+.carte{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+}
+@media only screen and (max-width:1400px){
+  header{
+    gap:150px;
+  }
+    li{
+      font-size: 15px;
+    } 
+    .services_choices{
+      width: 600px;
+    }
+    .services_choices .choice{
+      width: 250px;
+    }
+    .choice h2{
+      font-size: 25px;
+      
+    }
+    .choice p{
+      font-size: 15px;
+    }
+    .services_tittle h2{
+      font-size: 28px;
+    }
+    .services_tittle p{
+      font-size: 18px;
+    }.bar h2{
+      font-size: 50px;
+    }
+    .bar p{
+      font-size: 35px;
+    }
+    .client h2{
+      font-size: 50px;
+    }
+    .feedbacks h2{
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .call h2{
+      font-size: 50px;
+    }
+    .container{
+      padding-bottom: 100px;
+    }
+    .link2{
+      padding-bottom: 50px;
+    }
+    .about_us h1{
+      font-size: 60px;
+    }
+    .about_us img{
+      height: 500px;
+      margin-top: 150px;
+    }
+    .about_us p{
+      font-size: 25px;
+      margin-top: 250px;
+    }
+}
+@media only screen and (max-width:400px){
+  header{
+    gap: 20px;
+    width: 390px;
+
+  }
+  header span{
+    font-size: 20px;
+
+  }
+  header li{
+    font-size: 10px;
+  }
+}
+header {
+  gap :20px;
 }
