@@ -1,32 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Swiftfix Home Page</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/normalize.css" >
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img id="logo" src="img/Logo.png" alt="logo" >
-      <span>siwftflix</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiftfix Home Page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img id="logo" src="img/Logo.png" alt="logo" />
+        <span>siwftflix</span>
+      </div>
+      <ul class="menu" id="menu2">
+        <li>
+          <a class="menubutton"
+            style="background: #1a7f9f; color: white; padding: 20px"
+            href="index.html"
+            >Home</a
+          >
+        </li>
+        <li><a class="menubutton" href="contact.html">Contact</a></li>
+        <li id="services-menu">
+          <div id="services-down">
+          <a id="service-button" href="service.html">Service</a>
+          <img style="height: 17px;padding-top: 13px;" src="img/down-arrow-svgrepo-com.svg" alt="services-down">
+          </div>
+          <div id="service-menu">
+          <a id="service1">Service 1</a>
+          <a id="service2">Service 2</a>
+          <a id="service3">Service 3</a>
+          <a id="service4">Service 4</a>
+          </div>
+        </li>
+        <li><a class="menubutton" href="about.html">About</a></li>
+        <li>
+          <img id="search_icon"
+            style="height: 25px; margin-top: 8px"
+            src="img/Search.png"
+            alt="search icon"
+          />
+        </li>
+        <li>
+          <div id="icon_menu">
+            <div id="icon1" class="menu_icon2"></div>
+            <div id="icon2" class="menu_icon2"></div>
+            <div id="icon3" class="menu_icon2"></div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div id="search_input">
+    <input type="text" placeholder="Search">
     </div>
-    <ul class="menu">
-      <li><a style="background: #1a7f9f; color: white;padding:20px;" href="index.html">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="service.html">Services</a></li>
-      <li><a href="about.html">About</a>
-      <li><img
-        style="height: 25px; margin-top: 8px"
-        src="img/Search.png"
-        alt="search icon"
-      ></li>
-      
+    <div id="hamburger">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Service</a>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
     </ul>
-  </header>
-      <div class="hero">
+    </div>
+    <div class="hero">
       <div class="hero_tittle">
         <h1>Repair and Maintenance Service</h1>
         <p>
@@ -36,20 +73,21 @@
         <a href="">Contact Us</a>
         <p id="p2">top trusted companies in Morocco:</p>
         <div class="companies">
-          <img src="img/pic1.png" alt="companie 1" >
-          <img src="img/p2.png" alt="companie 2" >
-          <img src="img/pic3.png" alt="companie 3" >
-          <img style="padding-left: 15px" src="img/pic4.png" alt="companie 4" >
+          <img src="img/pic1.png" alt="companie 1" />
+          <img src="img/p2.png" alt="companie 2" />
+          <img src="img/pic3.png" alt="companie 3" />
+          <img style="padding-left: 15px" src="img/pic4.png" alt="companie 4" />
         </div>
       </div>
       <div class="hero_image">
-        <img src="img/Hero.png" alt="hero image">
+        <img  id="hero_pic" src="img/Hero.png" alt="hero image" />
         <div class="carte">
           <h2>Abdellah Benjelloun</h2>
           <p>-Maintenance Expert</p>
         </div>
       </div>
     </div>
+
     <div class="services">
       <div class="services_tittle">
         <h2>Why do we help with consulting?</h2>
@@ -58,42 +96,93 @@
           consulting for repair and maintenance.
         </p>
       </div>
-      <div class="services_choices">
+      <div class="services_choices" id="services-choices">
         <div class="choice">
-          <img src="img/i1.png" alt="service 1" >
+          <img src="img/i1.png" alt="service 1" />
           <h2>Equipment Maintenance</h2>
           <p>
             Our equipment maintenance team ensures that your machinery operates
             at peak efficiency
           </p>
+          <button id="btn1">About The Service</button>
         </div>
-        <div class="choice">
-          <img src="img/i2.png" alt="service 2" >
+        <div class="choice" id="choice">
+          <img src="img/i2.png" alt="service 2" />
           <h2>Facility Maintenance</h2>
-          <p>
+          <p id="para1">
             We provide comprehensive facility maintenance services to keep your
             premises safe and functional
           </p>
+          <button id="btn2">About The Service</button>
         </div>
         <div class="choice">
-          <img src="img/i3.png" alt="service 3" >
+          <img src="img/i3.png" alt="service 3" />
           <h2>Information and Technology</h2>
           <p>
             Our information and technology experts offer cutting-edge solutions
             for your IT needs
           </p>
+          <button id="btn3">About The Service</button>
         </div>
         <div class="choice">
-          <img src="img/i4.png" alt="service 4" >
+          <img src="img/i4.png" alt="service 4" />
           <h2>Other Services Of Maintenance</h2>
-          <p>
+          <p id="para4">
             In addition to maintenance, we offer a range of other services to
             support your business
           </p>
+          <button id="btn4">About The Service</button>
         </div>
       </div>
     </div>
-    <div class="bar">
+    <div class="read-more-div" id="read-more-div">
+    <div id="read-more">
+      <p>At SwiftFix, we are dedicated to ensuring the seamless operation of your essential machinery and equipment. Our Equipment Maintenance Service is designed to keep your assets performing at their best. With a team of skilled technicians and a commitment to precision, we provide comprehensive maintenance solutions to prevent downtime and extend the lifespan of your equipment.<br>What We Offer:</p>
+      <ul>
+      <li>Scheduled Maintenance: We tailor maintenance plans to your unique needs, offering regular check-ups and servicing to catch issues before they become costly problems.</li>
+      <li>Emergency Repairs: When unexpected breakdowns occur, our responsive team is here to get your equipment back up and running swiftly.</li>
+      <li>Quality Assurance: Our technicians are experts in their field, ensuring the highest level of care and precision in every maintenance task.</li>
+      </ul>
+      <button id="close">Close</button>
+    </div>
+    </div>
+    <div class="read-more-div2" id="read-more-div2">
+    <div id="read-more2">
+      <p>At SwiftFix, we understand the critical importance of maintaining your facilities to ensure a safe, efficient, and welcoming environment. Our Facility Maintenance Service is designed to take the worry out of facility management, leaving you to focus on your core business.</p>
+      <ul>
+        <li>tailor maintenance plans to your unique needs, offering regular check-ups and servicing to catch issues before they become costly problems.</li>
+        <li>When unexpected breakdowns occur, our responsive team is here to get your equipment back up and running swiftly.</li>
+        <li>Our technicians are experts in their field, ensuring the highest level of care and precision in every maintenance task.</li>
+    </ul>
+    <button id="close2">Close</button> 
+  </div>
+    </div>
+    <div class="read-more-div3" id="read-more-div3">
+      <div id="read-more3">
+        <p>In today's fast-paced and connected world, Information Technology (IT) is the backbone of businesses and organizations. At SwiftFix, we recognize the vital role that IT plays in driving innovation, productivity, and growth.<br>Our IT services:</p>
+        <ul>
+        <li>Network Solutions: We offer cutting-edge network design and management services to ensure seamless connectivity and data flow within your organization.</li>
+        <li>Software Development: We create custom software solutions to meet your specific needs, from web applications to mobile apps and more.</li>
+        <li>IT Consulting: Our experienced consultants provide strategic guidance to help you make the most of your IT investments.</li>
+        <li>Cybersecurity: Protecting your data and systems is paramount. Our cybersecurity experts implement robust measures to safeguard your digital assets.</li>
+        <li>Plumbing Maintenance: Our plumbing services prevent leaks, clogs, and other plumbing issues that can disrupt your daily operations.</li>
+        <li>General Building Maintenance: We offer a comprehensive range of building maintenance solutions, from roof repairs to interior renovations.</li>
+        </ul>
+        <button id="close3">Close</button>
+        </div>
+      </div>
+      <div class="read-more-div4" id="read-more-div4">
+        <div id="read-more4">
+          <p>Our Diverse Maintenance Services:</p>
+          <ul>
+          <li>HVAC Maintenance: We keep your heating, ventilation, and air conditioning systems in optimal condition, providing comfort and energy efficiency.</li>
+          <li>Grounds Maintenance: Our landscaping and groundskeeping services maintain a clean, safe, and attractive outdoor environment for your premises.</li>
+          <li>Electrical and Lighting Maintenance: We ensure your electrical systems and lighting fixtures are functional, safe, and energy-efficient.</li>
+          </ul>
+          <button id="close4">Close</button>
+        </div>
+        </div>   
+     <div class="bar">
       <h2>Some count that matters</h2>
       <p>Our achievement in the journey depicted in numbers</p>
       <div class="bar2">
@@ -101,14 +190,7 @@
           <h3>25</h3>
           <p>Clients</p>
         </div>
-        <div
-          style="
-            padding-left: 150px;
-            padding-right: 150px;
-            border-left: 1px solid white;
-            border-right: 1px solid white;
-          "
-        >
+        <div id="bar_h">
           <h3>100+</h3>
           <p>Token business legalities</p>
         </div>
@@ -121,7 +203,7 @@
     <div class="client">
       <h2>Clients Testimonial</h2>
       <div class="feedbacks">
-        <div class="client01">
+        <div class="client00">
           <div class="client1">
             <h2>Incredible Experience</h2>
             <p>
@@ -132,9 +214,9 @@
             </p>
           </div>
           <div class="image">
-            <img class="tri" src="img/tri1.png" alt="triangle" >
+            <img class="tri" src="img/tri1.png" alt="triangle" />
             <div class="profile">
-              <img src="img/img1.png" alt="client 1" >
+              <img src="img/img1.png" alt="client 1" />
               <div>
                 <h3>Sarah Bentaher</h3>
                 <p>CEO, MA Industires</p>
@@ -142,7 +224,7 @@
             </div>
           </div>
         </div>
-        <div class="client02">
+        <div class="client00">
           <div class="client2">
             <h2>Dependable, Responsive, Professional Partner</h2>
             <p>
@@ -153,9 +235,9 @@
             </p>
           </div>
           <div class="image">
-            <img class="tri" src="img/tri1.png" alt="triangle" >
+            <img class="tri" src="img/tri1.png" alt="triangle" />
             <div class="profile">
-              <img src="img/img2.png" alt="client 2" >
+              <img src="img/img2.png" alt="client 2" />
               <div>
                 <h3>Salima Alami</h3>
                 <p>CEO, FOODSO GROUP</p>
@@ -167,62 +249,69 @@
     </div>
     <div class="call">
       <h2>Complex Questions?</h2>
-      <p>Request for a personalized budget for your legal problem. We will send you a coupe options in 24 hours. You can have free consult , if a our first customer</p>
+      <p>
+        Request for a personalized budget for your legal problem. We will send
+        you a coupe options in 24 hours. You can have free consult , if a our
+        first customer
+      </p>
       <div class="button">
-      <img src="img/call.png" alt="phone icon">
-      <a href="">Call Now</a>
+        <img src="img/call.png" alt="phone icon" />
+        <a href="">Call Now</a>
       </div>
     </div>
     <footer>
-    <div class="top_section">
-    <div class="brand">
-    <img src="img/logo2.png" alt="logo">
-    <h2>SwiftFix</h2>
-    </div>
-    <div class="footer_menu">
-    <div>
-    <h3>Product</h3>
-    <ul>
-    <li>Overview</li>
-    <li>Features</li>
-    <li>Tutorials</li>
-    <li>Pricing</li>
-    <li>Releases</li>
-    </ul>
-    </div>
-    <div>
-    <h3>Company</h3>
-    <ul>
-    <li>About</li>
-    <li>Services</li>
-    <li>Careers</li>
-    <li>Contact</li>
-    <li>Partners</li>
-    </ul>
-    </div>
-    <div>
-    <h3>Support</h3>
-    <ul>
-    <li>Help Center</li>
-    <li>Terms of service</li>
-    <li>Legal</li>
-    <li>Privacy Policy</li>
-    <li>Status</li>
-    </ul>
-    </div>
-    </div>  
-    </div>
-    <div class="bottom_section">
-    <div>
-    <p>© 2023 SwiftFix. All rights reserved</p>
-    </div>
-    <div>
-    <img src="img/Social1.png" alt="instagram">
-    <img src="img/social2.png" alt="web">
-    <img src="img/social3.png" alt="twitter">
-    <img src="img/social4.png" alt="youtube">
-    </div>
-    </div>
+      <div class="top_section">
+        <div class="brand">
+          <img src="img/logo2.png" alt="logo" />
+          <h2>SwiftFix</h2>
+        </div>
+        <div class="footer_menu">
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li>Overview</li>
+              <li>Features</li>
+              <li>Tutorials</li>
+              <li>Pricing</li>
+              <li>Releases</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Services</li>
+              <li>Careers</li>
+              <li>Contact</li>
+              <li>Partners</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>Help Center</li>
+              <li>Terms of service</li>
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Status</li>
+              <li><a style="padding: 0;color: white;" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_section">
+        <div>
+          <p id="footer_p">© 2023 SwiftFix. All rights reserved</p>
+        </div>
+        <div>
+          <img src="img/Social1.png" alt="instagram" />
+          <img src="img/social2.png" alt="web" />
+          <img src="img/social3.png" alt="twitter" />
+          <img src="img/social4.png" alt="youtube" />
+        </div>
+      </div>
     </footer>
-</body>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

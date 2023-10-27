@@ -1,91 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-        <meta charset="UTF-8" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <title>Swiftfix Home Page</title>
-        <link rel="stylesheet" href="styles/style.css" >
-        <link rel="stylesheet" href="styles/normalize.css" >
-      </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiftfix Home Page</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-          <img id="logo" src="img/Logo.png" alt="logo" >
-          <span>siwftflix</span>
-        </div>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="service.html">Services</a></li>
-          <li><a style="background: #1a7f9f; color: white;padding:20px" href="about.html">About</a>
-          <li><img
+      <div class="logo">
+        <img id="logo" src="img/Logo.png" alt="logo" />
+        <span>siwftflix</span>
+      </div>
+      <ul class="menu" id="menu2">
+        <li>
+          <a class="menubutton"
+          
+            href="index.html"
+            >Home</a
+          >
+        </li>
+        <li><a class="menubutton" href="contact.html">Contact</a></li>
+        <li id="services-menu">
+          <div id="services-down">
+          <a id="service-button" href="service.html">Service</a>
+          <img style="height: 17px;padding-top: 13px;" src="img/down-arrow-svgrepo-com.svg" alt="services-down">
+          </div>
+          <div id="service-menu">
+          <a id="service1" href="index.html#services-choices">Service 1</a>
+          <a id="service2" href="index.html#services-choices">Service 2</a>
+          <a id="service3" href="index.html#services-choices">Service 3</a>
+          <a id="service4" href="index.html#services-choices">Service 4</a>
+          </div>
+        </li>
+        <li><a class="menubutton" style="background: #1a7f9f; color: white; padding: 20px" href="about.html">About</a></li>
+        <li>
+          <img id="search_icon"
             style="height: 25px; margin-top: 8px"
             src="img/Search.png"
             alt="search icon"
-          ></li>
-          
-        </ul>
-      </header>
+          />
+        </li>
+        <li>
+          <div id="icon_menu">
+            <div id="icon1" class="menu_icon2"></div>
+            <div id="icon2" class="menu_icon2"></div>
+            <div id="icon3" class="menu_icon2"></div>
+          </div>
+        </li>
+      </ul>
+    </header>
+    <div id="search_input">
+      <input type="text" placeholder="Search">
+   </div>
+    <div id="hamburger">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </div>
+
     <div class="about_us">
-        <div>
+      <div>
         <h1>About Us</h1>
-        <img src="img/man.png" alt="about us pic">
-    </div>
-    <div>
-    <p>Welcome to swiftflix Services, your trusted partner in fixing and maintaining homes, vehicles, and more. At swiftfix, we understand that life's everyday challenges can throw unexpected problems your way, and that's where we come in. With a team of skilled professionals and a commitment to excellence, we take pride in providing comprehensive solutions for all your repair and maintenance needs. Whether it's a leaky roof, a malfunctioning vehicle, a faulty appliance, or any other household or automotive issue, our experts are here to restore functionality and peace of mind. We bring together a wealth of knowledge, years of experience, and a dedication to customer satisfaction to ensure that your problems are fixed efficiently and effectively. Count on swiftfix Services to be your go-to partner, always ready to keep your home and vehicles in tip-top shape. Your convenience, safety, and comfort are our top priorities.</p>
-    </div>
+        <img src="img/man.png" alt="about us pic" />
+      </div>
+      <div>
+        <p>
+          Welcome to swiftflix Services, your trusted partner in fixing and
+          maintaining homes, vehicles, and more. At swiftfix, we understand that
+          life's everyday challenges can throw unexpected problems your way, and
+          that's where we come in. With a team of skilled professionals and a
+          commitment to excellence, we take pride in providing comprehensive
+          solutions for all your repair and maintenance needs. Whether it's a
+          leaky roof, a malfunctioning vehicle, a faulty appliance, or any other
+          household or automotive issue, our experts are here to restore
+          functionality and peace of mind. We bring together a wealth of
+          knowledge, years of experience, and a dedication to customer
+          satisfaction to ensure that your problems are fixed efficiently and
+          effectively. Count on swiftfix Services to be your go-to partner,
+          always ready to keep your home and vehicles in tip-top shape. Your
+          convenience, safety, and comfort are our top priorities.
+        </p>
+      </div>
     </div>
     <div class="link"><a href="contact.html">Contact Us</a></div>
     <footer>
-        <div class="top_section">
+      <div class="top_section">
         <div class="brand">
-        <img src="img/logo2.png" alt="logo">
-        <h2>SwiftFix</h2>
+          <img src="img/logo2.png" alt="logo" />
+          <h2>SwiftFix</h2>
         </div>
         <div class="footer_menu">
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li>Overview</li>
+              <li>Features</li>
+              <li>Tutorials</li>
+              <li>Pricing</li>
+              <li>Releases</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Services</li>
+              <li>Careers</li>
+              <li>Contact</li>
+              <li>Partners</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>Help Center</li>
+              <li>Terms of service</li>
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Status</li>
+              <li><a style="padding: 0;color: white;" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_section">
         <div>
-        <h3>Product</h3>
-        <ul>
-        <li>Overview</li>
-        <li>Features</li>
-        <li>Tutorials</li>
-        <li>Pricing</li>
-        <li>Releases</li>
-        </ul>
+          <p id="footer_p">© 2023 SwiftFix. All rights reserved</p>
         </div>
         <div>
-        <h3>Company</h3>
-        <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Careers</li>
-        <li>Contact</li>
-        <li>Partners</li>
-        </ul>
+          <img src="img/Social1.png" alt="instagram" />
+          <img src="img/social2.png" alt="web" />
+          <img src="img/social3.png" alt="twitter" />
+          <img src="img/social4.png" alt="youtube" />
         </div>
-        <div>
-        <h3>Support</h3>
-        <ul>
-        <li>Help Center</li>
-        <li>Terms of service</li>
-        <li>Legal</li>
-        <li>Privacy Policy</li>
-        <li>Status</li>
-        </ul>
-        </div>
-        </div>  
-        </div>
-        <div class="bottom_section">
-        <div>
-        <p>© 2023 SwiftFix. All rights reserved</p>
-        </div>
-        <div>
-        <img src="img/Social1.png" alt="instagram">
-        <img src="img/social2.png" alt="web">
-        <img src="img/social3.png" alt="twitter">
-        <img src="img/social4.png" alt="youtube">
-        </div>
-        </div>
-        </footer>
-</body>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

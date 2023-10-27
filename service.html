@@ -1,122 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swiftfix Home Page</title>
-    <link rel="stylesheet" href="styles/style.css" >
-    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <style>
+    #service-menu{
+      margin-top: 75px;
+      margin-left: 10px;
+    }
+    .main_services{
+      margin-top: 250px;
+    }
+    </style>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img id="logo" src="img/Logo.png" alt="logo" >
+        <img id="logo" src="img/Logo.png" alt="logo" />
         <span>siwftflix</span>
       </div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a style="background: #1a7f9f; color: white;padding:20px;" href="service.html">Services</a></li>
-        <li><a href="about.html">About</a>
-        <li><img
-          style="height: 25px; margin-top: 8px"
-          src="img/Search.png"
-          alt="search icon"
-        ></li>
+      <ul class="menu" id="menu2">
+        <li>
+          <a class="menubutton"
+            href="index.html"
+            >Home</a
+          >
+        </li>
+        <li><a class="menubutton" href="contact.html">Contact</a></li>
+        <li id="services-menu" style="margin-top: -10px">
+          <div id="services-down" style="background: #1a7f9f; color: rgb(255, 255, 255); padding: 10px">
+          <a id="service-button" style="color: white;" href="service.html">Service</a>
+          <img style="height: 17px;padding-top: 13px;" src="img/down-arrow-svgrepo-com.svg" alt="services-down">
+          </div>
+          <div id="service-menu">
+            <a id="service1" href="index.html#services-choices">Service 1</a>
+            <a id="service2" href="index.html#services-choices">Service 2</a>
+            <a id="service3" href="index.html#services-choices">Service 3</a>
+            <a id="service4" href="index.html#services-choices">Service 4</a>
+          </div>
+        </li>
+        <li><a class="menubutton" href="about.html">About</a></li>
+        <li>
+          <img id="search_icon"
+            style="height: 25px; margin-top: 8px"
+            src="img/Search.png"
+            alt="search icon"
+          />
+        </li>
+        <li>
+          <div id="icon_menu">
+            <div id="icon1" class="menu_icon2"></div>
+            <div id="icon2" class="menu_icon2"></div>
+            <div id="icon3" class="menu_icon2"></div>
+          </div>
+        </li>
       </ul>
     </header>
+    <div id="search_input">
+      <input type="text" placeholder="Search">
+      </div>
+    <div id="hamburger">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </div>
     <div class="main_services">
       <h1>Our Services</h1>
       <div class="container">
-              <div class="services_choices">
-        <div class="choice" >
-          <img src="img/i1.png" alt="service 1" >
-          <h2>Equipment Maintenance</h2>
-          <p>
-            Our equipment maintenance team ensures that your machinery operates
-            at peak efficiency
-          </p>
+        <div class="services_choices">
+          <div class="choice">
+            <img src="img/i1.png" alt="service 1" />
+            <h2>Equipment Maintenance</h2>
+            <p>
+              Our equipment maintenance team ensures that your machinery
+              operates at peak efficiency
+            </p>
+          </div>
+          <div class="choice">
+            <img src="img/i2.png" alt="service 2" />
+            <h2>Facility Maintenance</h2>
+            <p>
+              We provide comprehensive facility maintenance services to keep
+              your premises safe and functional
+            </p>
+          </div>
+          <div class="choice" id="choice1">
+            <img src="img/i3.png" alt="service 3" />
+            <h2>Information and Technology</h2>
+            <p>
+              Our information and technology experts offer cutting-edge
+              solutions for your IT needs
+            </p>
+          </div>
+          <div class="choice" id="choice2">
+            <img src="img/i4.png" alt="service 4" />
+            <h2>Other Services Of Maintenance</h2>
+            <p>
+              In addition to maintenance, we offer a range of other services to
+              support your business
+            </p>
+          </div>
         </div>
-        <div class="choice">
-          <img src="img/i2.png" alt="service 2" >
-          <h2>Facility Maintenance</h2>
-          <p>
-            We provide comprehensive facility maintenance services to keep your
-            premises safe and functional
-          </p>
-        </div>
-        <div class="choice" id="choice1">
-          <img src="img/i3.png" alt="service 3" >
-          <h2>Information and Technology</h2>
-          <p>
-            Our information and technology experts offer cutting-edge solutions
-            for your IT needs
-          </p>
-        </div>
-        <div class="choice" id="choice2">
-          <img src="img/i4.png" alt="service 4" >
-          <h2>Other Services Of Maintenance</h2>
-          <p>
-            In addition to maintenance, we offer a range of other services to
-            support your business
-          </p>
-        </div>
-      </div>
       </div>
       <div class="link2">
-      <a href=""><b>view more</b></a>
+        <a href=""><b>view more</b></a>
       </div>
     </div>
     <footer>
-        <div class="top_section">
+      <div class="top_section">
         <div class="brand">
-        <img src="img/logo2.png" alt="logo">
-        <h2>SwiftFix</h2>
+          <img src="img/logo2.png" alt="logo" />
+          <h2>SwiftFix</h2>
         </div>
         <div class="footer_menu">
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li>Overview</li>
+              <li>Features</li>
+              <li>Tutorials</li>
+              <li>Pricing</li>
+              <li>Releases</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Services</li>
+              <li>Careers</li>
+              <li>Contact</li>
+              <li>Partners</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>Help Center</li>
+              <li>Terms of service</li>
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Status</li>
+              <li><a style="padding: 0;color: white;" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_section">
         <div>
-        <h3>Product</h3>
-        <ul>
-        <li>Overview</li>
-        <li>Features</li>
-        <li>Tutorials</li>
-        <li>Pricing</li>
-        <li>Releases</li>
-        </ul>
+          <p id="footer_p">© 2023 SwiftFix. All rights reserved</p>
         </div>
         <div>
-        <h3>Company</h3>
-        <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Careers</li>
-        <li>Contact</li>
-        <li>Partners</li>
-        </ul>
+          <img src="img/Social1.png" alt="instagram" />
+          <img src="img/social2.png" alt="web" />
+          <img src="img/social3.png" alt="twitter" />
+          <img src="img/social4.png" alt="youtube" />
         </div>
-        <div>
-        <h3>Support</h3>
-        <ul>
-        <li>Help Center</li>
-        <li>Terms of service</li>
-        <li>Legal</li>
-        <li>Privacy Policy</li>
-        <li>Status</li>
-        </ul>
-        </div>
-        </div>  
-        </div>
-        <div class="bottom_section">
-        <div>
-        <p>© 2023 SwiftFix. All rights reserved</p>
-        </div>
-        <div>
-        <img src="img/Social1.png" alt="instagram">
-        <img src="img/social2.png" alt="web">
-        <img src="img/social3.png" alt="twitter">
-        <img src="img/social4.png" alt="youtube">
-        </div>
-        </div>
-        </footer>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
-  </html>
+</html>

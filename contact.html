@@ -1,96 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swiftfix Home Page</title>
-    <link rel="stylesheet" href="styles/style.css" >
-    <link rel="stylesheet" href="styles/normalize.css" >
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <img id="logo" src="img/Logo.png" alt="logo" >
+        <img id="logo" src="img/Logo.png" alt="logo" />
         <span>siwftflix</span>
       </div>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a style="background: #1a7f9f; color: white;padding:20px;"  href="contact.html">Contact</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="about.html">About</a>
-        <li><img
-          style="height: 25px; margin-top: 8px"
-          src="img/Search.png"
-          alt="search icon"
-        ></li>
+      <ul class="menu" id="menu2">
+        <li>
+          <a class="menubutton"
+
+            href="index.html"
+            >Home</a
+          >
+        </li>
+        <li><a class="menubutton" style="background: #1a7f9f; color: white; padding: 20px"href="contact.html">Contact</a></li>
+        <li id="services-menu">
+          <div id="services-down">
+          <a id="service-button" href="service.html">Service</a>
+          <img style="height: 17px;padding-top: 13px;" src="img/down-arrow-svgrepo-com.svg" alt="services-down">
+          </div>
+          <div id="service-menu">
+            <a id="service1" href="index.html#services-choices">Service 1</a>
+            <a id="service2" href="index.html#services-choices">Service 2</a>
+            <a id="service3" href="index.html#services-choices">Service 3</a>
+            <a id="service4" href="index.html#services-choices">Service 4</a>
+          </div>
+        </li>
+        <li><a class="menubutton" href="about.html">About</a></li>
+        <li>
+          <img id="search_icon"
+            style="height: 25px; margin-top: 8px"
+            src="img/Search.png"
+            alt="search icon"
+          />
+        </li>
+        <li>
+          <div id="icon_menu">
+            <div id="icon1" class="menu_icon2"></div>
+            <div id="icon2" class="menu_icon2"></div>
+            <div id="icon3" class="menu_icon2"></div>
+          </div>
+        </li>
       </ul>
     </header>
-        <div class="contact_us">
-            <div class="part1">
-            <h1>Contact</h1>
-            <form action=index.php>
-            <div><input type="text" id="name" placeholder="Name"></div>
-            <div><input type="tel" id="number" placeholder="Number"></div>
-            <div><input type="email" id="email" placeholder="email"></div>
-            <div><input type="text" id="message" placeholder="message"></div>
-            <input type="submit" value="Send">
-            </form>
+    <div id="search_input">
+      <input type="text" placeholder="Search">
+      </div>
+    <div id="hamburger">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </div>
+    <div class="contact_us">
+      <div class="part1">
+        <h1>Contact</h1>
+        <form>
+          <div><input type="text" name="name" id="name" placeholder="Name" /></div>
+          <div class="error" id="name-error"></div>
+          <div><input type="tel" name="number" id="number" placeholder="+212*********" /></div>
+          <div class="error" id="number-error"></div>
+          <div><input type="email" name="email" id="email" placeholder="example@ex.domain" /></div>
+          <div class="error" id="email-error"></div>
+          <div><input type="text" name="message" id="message" placeholder="message" /></div>
+          <div class="error" id="message-error"></div>
+          <a onclick="Validation()">Send</a>
+        </form>
+      </div>
+      <div class="part2">
+        <h2>Want To Meet Us ?</h2>
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBv3ntsV4ulsNC9j6yqr0Kv7UCkS-cTbFE&q=33.58987153200756,%20-7.595244986094712"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <footer>
+      <div class="top_section">
+        <div class="brand">
+          <img src="img/logo2.png" alt="logo" />
+          <h2>SwiftFix</h2>
+        </div>
+        <div class="footer_menu">
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li>Overview</li>
+              <li>Features</li>
+              <li>Tutorials</li>
+              <li>Pricing</li>
+              <li>Releases</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li>About</li>
+              <li>Services</li>
+              <li>Careers</li>
+              <li>Contact</li>
+              <li>Partners</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <ul>
+              <li>Help Center</li>
+              <li>Terms of service</li>
+              <li>Legal</li>
+              <li>Privacy Policy</li>
+              <li>Status</li>
+              <li><a style="padding: 0;color: white;" href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_section">
+        <div>
+          <p id="footer_p">© 2023 SwiftFix. All rights reserved</p>
         </div>
         <div>
-          <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBv3ntsV4ulsNC9j6yqr0Kv7UCkS-cTbFE&q=33.58987153200756,%20-7.595244986094712"
-          allowfullscreen></iframe>
+          <img src="img/Social1.png" alt="instagram" />
+          <img src="img/social2.png" alt="web" />
+          <img src="img/social3.png" alt="twitter" />
+          <img src="img/social4.png" alt="youtube" />
         </div>
-        </div>
-        <footer>
-    <div class="top_section">
-    <div class="brand">
-    <img src="img/logo2.png" alt="logo">
-    <h2>SwiftFix</h2>
-    </div>
-    <div class="footer_menu">
-    <div>
-    <h3>Product</h3>
-    <ul>
-    <li>Overview</li>
-    <li>Features</li>
-    <li>Tutorials</li>
-    <li>Pricing</li>
-    <li>Releases</li>
-    </ul>
-    </div>
-    <div>
-    <h3>Company</h3>
-    <ul>
-    <li>About</li>
-    <li>Services</li>
-    <li>Careers</li>
-    <li>Contact</li>
-    <li>Partners</li>
-    </ul>
-    </div>
-    <div>
-    <h3>Support</h3>
-    <ul>
-    <li>Help Center</li>
-    <li>Terms of service</li>
-    <li>Legal</li>
-    <li>Privacy Policy</li>
-    <li>Status</li>
-    </ul>
-    </div>
-    </div>  
-    </div>
-    <div class="bottom_section">
-    <div>
-    <p>© 2023 SwiftFix. All rights reserved</p>
-    </div>
-    <div>
-    <img src="img/Social1.png" alt="instagram">
-    <img src="img/social2.png" alt="web">
-    <img src="img/social3.png" alt="twitter">
-    <img src="img/social4.png" alt="youtube">
-    </div>
-    </div>
+      </div>
     </footer>
-    </body>
-    </html>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>
