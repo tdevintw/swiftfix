@@ -18,7 +18,18 @@
           <a class="menubutton" href="index.html">Home</a>
         </li>
         <li><a class="menubutton" href="contact.html">Contact</a></li>
-        <li><a class="menubutton" href="service.html">Services</a></li>
+        <li id="services-menu">
+          <div id="services-down">
+          <a id="service-button" href="service.html">Service</a>
+          <img style="height: 17px;padding-top: 13px;" src="img/down-arrow-svgrepo-com.svg" alt="services-down">
+          </div>
+          <div id="service-menu">
+            <a id="service1" href="index.html#services-choices">Service 1</a>
+            <a id="service2" href="index.html#services-choices">Service 2</a>
+            <a id="service3" href="index.html#services-choices">Service 3</a>
+            <a id="service4" href="index.html#services-choices">Service 4</a>
+          </div>
+        </li>
         <li><a class="menubutton" href="about.html">About</a></li>
         <li>
           <img
@@ -72,7 +83,7 @@
         <div class="faq_section">
           <div class="question">
             <h3>How do I request a repair or maintenance service?</h3>
-            <img class="button-down" src="img/down-arrow-svgrepo-com.svg" alt="down" />
+            <img class="button-down"  src="img/down-arrow-svgrepo-com.svg" alt="down" />
           </div>
           <div class="faq_answer">
           <p>Requesting a service is simple. You can either give us a call at [Your Phone Number] or use our convenient online request form on our website. Provide us with the details of the service you need, and we will get in touch with you to schedule an appointment.</p>
@@ -164,5 +175,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="faq.js"></script>
   </body>
 </html>

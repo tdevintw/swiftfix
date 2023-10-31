@@ -1546,3 +1546,7 @@ padding: 0;
 .client1 , .client2 {
   height: 70%;
 }
+.active{
+  display: flex;
+  flex-direction: column;
+}
